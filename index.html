@@ -1,0 +1,468 @@
+ 
+ 
+ <html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Style Website</title>
+    <link rel="stylesheet" href="abc4.css">
+   
+</head>
+
+
+<body>
+
+  <!-- GIRIS KISMI SAYFANIN---------------------------------------------------------------- -->
+
+  <section class="hero-section">
+    <div class="hero-container">
+      <!-- Sol Taraf: Metin İçeriği -->
+      <div class="text-content">
+        <h1>Biyomedikal Devi <span class="highlight">Metrosan</span></h1>
+        <h2>1997'den beri yüksek teknolojide öncü</h2>
+        <p>İleri teknolojileri kullanarak özgün ürünler üreten ve küresel rekabet gücüne ulaşmış, OEM olarak hizmet sunan "dünya markası, yetenekli üretici şirketi" olmak.</p>
+        <button class="cta-button">Daha Fazlası ►</button>
+      </div>
+
+      <!-- Sağ Taraf: 3D Model -->
+      <div class="model-container">
+        <model-viewer
+    src="sonhaliparcakopya.glb"
+    alt="3D Model"
+    camera-controls
+    disable-zoom <!-- Zoom'u devre dışı bırakmak için bu satırı ekleyin -->
+    auto-rotate
+    auto-rotate-delay="0"
+    auto-rotate-speed="0.9rad/s"
+    field-of-view="35deg"
+    style="width: 100%; height: 100%;"
+>
+</model-viewer>
+      </div>
+    </div>
+  </section>
+  <section>
+
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+        <!-- Logo - Sol köşede -->
+        <div class="logo-container">
+            <img src="/unnamed.png" alt="Logo" class="logo">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-arrow">Ürünlerimiz</a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content">
+                        <div class="dropdown-column">
+                            <h3 class="column-title">Ürün Kategorisi 1</h3>
+                            <a href="#" class="dropdown-item">Ürün 1</a>
+                            <a href="#" class="dropdown-item">Ürün 2</a>
+                            <a href="#" class="dropdown-item">Ürün 3</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-title">Ürün Kategorisi 2</h3>
+                            <a href="#" class="dropdown-item">Ürün 4</a>
+                            <a href="#" class="dropdown-item">Ürün 5</a>
+                            <a href="#" class="dropdown-item">Ürün 6</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-title">Ürün Kategorisi 3</h3>
+                            <a href="#" class="dropdown-item">Ürün 7</a>
+                            <a href="#" class="dropdown-item">Ürün 8</a>
+                            <a href="#" class="dropdown-item">Ürün 9</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="nav-link">Hizmetlerimiz</a></li>
+            <li><a href="#" class="nav-link">Hakkımızda</a></li>
+            <li><a href="#" class="nav-link">İletişim</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+        </ul>
+
+        <!-- Right Section - Sağ köşede -->
+        <div class="right-section">
+            <div class="navbar-actions">
+                <button class="catalog-btn filled" aria-label="E-Katalog">
+                    <svg class="btn-icon" viewBox="0 0 24 24">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                    </svg>
+                    E-KATALOG
+                </button>
+                
+                <button class="catalog-btn outline" aria-label="Kataloglar">
+                    <svg class="btn-icon" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    KATALOGLAR
+                </button>
+            </div>
+
+            <!-- Hamburger Menu Button (Only visible on mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav">
+          <li>
+              <a href="#" class="nav-link">Ürünlerimiz</a>
+              <div class="incecizgi"></div>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Hizmetlerimiz</a>
+              <div class="incecizgi"></div>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Hakkımızda</a>
+              <div class="incecizgi"></div>
+          </li>
+          <li>
+              <a href="#" class="nav-link">İletişim</a>
+              <div class="incecizgi"></div>
+          </li>
+          <li>
+              <a href="#" class="nav-link">Blog</a>
+              <div class="incecizgi"></div>
+          </li>
+      </ul>
+  </div>
+  </section>
+
+
+
+
+<section class="ai-section">
+  <div class="container">
+    <!-- Sol Taraf (Resim + Başlık) -->
+    <div class="image-section">
+      <div class="circle-image">
+        <img src="/recommend-optimized.png" alt="AI Icon">
+      </div>
+      <h3 class="subtitle">ISO 9001<br>Certificate</h3>
+    </div>
+
+    <!-- Sağ Taraf (İletişim Bilgileri) -->
+        <div class="bize_ulasin">Bize Ulasin!</div>
+   <div class="contact-section">
+   
+  <div class="contact-box">
+    <a href="tel:+901234567890" class="contact-item">
+      <i class="fas fa-phone-alt"></i> <span class="contact-text">+90 123 456 78 90</span>
+    </a>
+    <a href="mailto:info@ornek.com" class="contact-item">
+      <i class="fas fa-envelope"></i> <span class="contact-text">info@ornek.com</span>
+    </a>
+  </div>
+</div>
+  </div>
+
+  <!-- Alt Kısım (Kayan Logo Tezgahı) -->
+  <div class="brand-carousel-container">
+    <div class="brand-track">
+          <div class="brand-item"><img src="/11.logo.png" alt="Microsoft"></div>
+      <div class="brand-item"><img src="/1.logo.jpg" alt="Nasdaq"></div>
+      <div class="brand-item"><img src="/2.logo.webp" alt="SWISS GEAR"></div>
+      <div class="brand-item"><img src="/3.logo.webp" alt="AI21 Labs"></div>
+      <div class="brand-item"><img src="/4.logo.png" alt="AWS"></div>
+      <div class="brand-item"><img src="/5.logo.webp" alt="MICROBI"></div>
+      <!-- Logoları tekrar ekleyerek sonsuz döngü efekti -->
+      <div class="brand-item"><img src="/6.logo.png" alt="Microsoft"></div>
+      <div class="brand-item"><img src="/7.logo.webp" alt="Nasdaq"></div>
+      <div class="brand-item"><img src="/8.logo.jpg" alt="SWISS GEAR"></div>
+       <div class="brand-item"><img src="/9.logo.png" alt="SWISS GEAR"></div>
+        <div class="brand-item"><img src="/10.logo.webp" alt="SWISS GEAR"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+    
+<div class="alan">
+
+ <div class="header">
+        <div class="left-content">
+            <div class="small-text">BİZİ DİĞERLERİNDEN AYIRAN NE?</div>
+            <h1 class="main-title">Dijital Vizyon,</h1>
+        </div>
+        
+        <button class="demo-button">
+            <span class="arrow">↗</span>
+           YAKINDAN İNCELEYİN
+        </button>
+    </div>
+
+<!-- Yeni bölüm -->
+ <div class="ozellikler-konteyner">
+ <div class="ozellikler-bolumu">
+        <div class="ozellik">
+            <div class="ozellik-kutu"> 
+                <div class="ozellik-ikon">
+                    <img src="/sablon 1_Nero_AI_Image_Upscaler_Photo_Face.jpeg" alt="Complexity icon">
+                </div>
+            </div>
+            <div class="ozellik-metin">
+                <h3>KALİTE KONTROL DEPARTMANI</h3>
+                <p> Ham malzeme, takım, uç, sarf malzeme tedariğinin, üretimin, yüzey proseslerinin ve paketlemenin her safhasında kalite kontrol edilir. Tezgahlardan çıkan her ürün tek tek ölçme cihazlarında, üretilen mastarlar, aparatlar ve teknik resimler dahilinde kontrol edilmektedir.</p>
+            </div>
+        </div>
+
+        <div class="ozellik">
+            <div class="ozellik-kutu">
+                <div class="ozellik-ikon">
+                    <img src="/metrsoan resmi.png" alt="Built together icon">
+                </div>
+            </div>
+            <div class="ozellik-metin">
+                <h3> ISO 9001</h3>
+                <p>Metrosan, ISO 9001 Kalite Yönetim Sistemi Sertifikasını almaya hak kazanmıştır.
+Bu belge, firmamızın uluslararası kalite standartlarına uygunluğunu tescillemektedir.</p>
+            </div>
+        </div>
+
+        <div class="ozellik">
+            <div class="ozellik-kutu">
+                <div class="ozellik-ikon">
+                    <img src="/sablon2.jpg" alt="Human judgment icon">
+                </div>
+            </div>
+            <div class="ozellik-metin">
+                <h3>AR&GE DEPARTMANI</h3>
+                <p>Metrosan kurulduğu 1997 yılından bugüne, endüstrinin değişik alanlarında, ileri teknoloji ve bilgi birikimi gerektiren projelerin tasarım ve üretimlerini gerçekleştirmiştir.
+</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- Video KISMIIIIIIIIIIIIIIIIII------------------------------------------------------------------------------------- -->
+
+<section class="video-kismi">
+   <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="/2025 TR .mp4" type="video/mp4" />
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
+  </div>
+</section>
+
+<!--VIDEO ALTI YAZI  KISMIIIIIIIIIIIIIIIIII------------------------------------------------------------------------------------- -->
+
+<section class="section2">
+    <p class="small-label">SİSTEMİMİZ</p>
+    <h1 class="main-title2">Gizli yapılar değil, <br>size özel modüller.</h1>
+    <div class="content">
+      <div class="left-text">
+        <p>Biz sadece ürün sunmuyoruz.</p>
+        <p>Sağlık ve havacılık alanlarındaki ihtiyaçlarınıza özel, <br>
+  modüler ve entegre çözümler geliştiriyoruz.</p>
+      </div>
+      <div class="right-text">
+        <p>İster tıbbi cihaz, ister havacılık teknolojisi olsun; <br>
+  siz seçin, biz uyum sağlayalım.<br>
+   Modüler, güvenilir, size özel. <br>
+       Sizin için çalışan akıllı bir altyapı.</p>
+      </div>
+    </div>
+  </section>
+
+<section>
+
+  <!-- 3D Model Scroll Section -->
+  <div class="ms3d-container">
+    <!-- Sol Taraf - 3D Model (Sabit) -->
+    <div class="ms3d-model-wrapper">
+        <model-viewer
+            id="ms3d-main-model"
+            src="sonhaliparcakopya.glb"
+            camera-controls
+            auto-rotate
+            shadow-intensity="1"
+            camera-orbit="0deg 75deg 105%"
+            field-of-view="30deg"
+            exposure="0.8"
+            environment-image="neutral"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            style="width: 100%; height: 100%;">
+        </model-viewer>
+    </div>
+    
+    <!-- Sağ Taraf - Metin Bölümleri -->
+    <div class="ms3d-content-wrapper">
+        <div class="ms3d-text-panel" id="ms3d-section-1">
+            <h2 class="ms3d-heading">Parça 1 - Medikal İmplant</h2>
+            <p class="ms3d-description">Birinci 3D modelinizin detaylı açıklaması burada yer alıyor. Bu parça özellikle medikal cihazlarda kullanılan yüksek hassasiyetli bir bileşendir. Titanyum alaşımından yapılan bu implant, hasta güvenliği ve cerrahi hassasiyet için özel olarak tasarlanmıştır. ISO 13485 medikal cihaz standartlarına uygun olarak üretilmektedir.</p>
+        </div>
+        
+        <div class="ms3d-text-panel" id="ms3d-section-2">
+            <h2 class="ms3d-heading">Parça 2 - Hassas Bileşen</h2>
+            <p class="ms3d-description">İkinci 3D modeliniz için detaylı açıklama metni. Bu parça havacılık sektöründe kullanılan hafif ve dayanıklı malzemelerden üretilmektedir. CNC tezgahlarında mikron hassasiyetle işlenen bu bileşen, yüksek sıcaklık ve basınca dayanıklı özel alaşımlardan üretilir. Kalite kontrol süreçlerinden geçirilerek test edilmektedir.</p>
+        </div>
+        
+        <div class="ms3d-text-panel" id="ms3d-section-3">
+            <h2 class="ms3d-heading">Parça 3 - AR&GE Ürünü</h2>
+            <p class="ms3d-description">Üçüncü modelinizin teknik özellikleri ve inovatif tasarım detayları. AR&GE departmanımızca geliştirilmiş özel tasarım ürünüdür. Bu parça, 25 yıllık tecrübemizle geliştirilen özel üretim tekniklerini kullanarak, endüstri 4.0 standartlarında üretilmektedir. Sürdürülebilir üretim yöntemleri ile çevre dostu yaklaşım benimsenmiştir.</p>
+        </div>
+        
+        <div class="ms3d-text-panel" id="ms3d-section-4">
+            <h2 class="ms3d-heading">Parça 4 - Kalite Standardı</h2>
+            <p class="ms3d-description">Dördüncü parçanızla ilgili kapsamlı detaylar bu bölümde sunulmaktadır. ISO 9001 kalite standartlarında üretilen bu parça yüksek performans sunar. Kalite kontrol departmanımızda her üretim aşamasında titizlikle test edilmektedir. Uluslararası sertifikasyonlara sahip olan bu ürün, global pazarlarda tercih edilmektedir.</p>
+        </div>
+        
+        <div class="ms3d-text-panel" id="ms3d-section-5">
+            <h2 class="ms3d-heading">Parça 5 - Son Teknoloji</h2>
+            <p class="ms3d-description">Beşinci ve son modelinizin tanıtım metni ve teknik özellikleri. Kalite kontrol departmanımızda titizlikle test edilmiş son teknoloji ürünüdür. 1997'den bugüne kadar edindiğimiz deneyim ve know-how ile geliştirilen bu ürün, sektörde öncü konumumuzu pekiştiren önemli bir bileşendir. Gelecek nesil teknolojilerle uyumlu tasarım.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+ <!-- 3D Model Bölümü (Sol)-------------------------------------------------------------------------------- -->
+
+<section class="section2">
+    <p class="small-label">SİSTEMİMİZ</p>
+    <h1 class="main-title2">METROSAN, <br>GÜNDEMİMİZ</h1>
+    <div class="content">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- 3 LU HOLOGRAMLI KART SISTEMI------------------------------------------------------------------------------------------------------------------- -->
+<!-- 3 LU HOLOGRAMLI KART SISTEMI -->
+<div class="uclu-kart">
+    <div class="card-container">
+        <!-- Kart 1 - Üretim -->
+        <div class="card">
+            <img src="/sablon2.jpg" alt="Üretim">
+
+            <div class="overlay">
+                <h3>Yerli Üretimde Atılım!</h3>
+                <p>Metrosan, biyomedikal parça üretiminde yerli sistemle ilk kez tam otomasyon sağladı.</p>
+            </div>
+        </div>
+
+        <!-- Kart 2 - Metrosan -->
+        <div class="card">
+            <img src="/metrsoan resmi.png" alt="Metrosan">
+           
+            <div class="overlay">
+                <h3>Zirveye Yükseliyor!</h3>
+                <p>Automations improved candidate screening</p>
+            </div>
+        </div>
+
+        <!-- Kart 3 - Montaj -->
+        <div class="card">
+            <img src="/sablon 1_Nero_AI_Image_Upscaler_Photo_Face.jpeg" alt="Montaj">
+          
+            <div class="overlay">
+                <h3>Montajda Türkiye'de İlk!</h3>
+                <p>Metrosan, 25 yıllık tecrübesiyle biyomedikalde liderliğe oynuyor. Yeni tesisle kapasite arttı.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer--------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Hakkımızda</h3>
+                <p>25 yılı aşkın tecrübemizle medikal sektöründe öncü firmalardan biriyiz. Kalite ve müşteri memnuniyeti her zaman önceliğimizdir.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Hızlı Linkler</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Ürünlerimiz</a></li>
+                    <li><a href="#">Sunumlar</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ürünler</h3>
+                <ul class="footer-links">
+                    <li><a href="#">İmplantlar</a></li>
+                    <li><a href="#">Konteynır Sistemleri</a></li>
+                    <li><a href="#">Cerrahi Aletler</a></li>
+                    <li><a href="#">Stabilizasyon Sistemleri</a></li>
+                    <li><a href="#">Minimal İnvazive Sistemler</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>İletişim</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Organize Sanayi Bölgesi, İstanbul</li>
+                    <li><i class="fas fa-phone"></i> +90 212 555 55 55</li>
+                    <li><i class="fas fa-envelope"></i> info@metrosan.com.tr</li>
+                    <li><i class="fas fa-clock"></i> Pzt-Cmt: 08:00 - 18:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 METROSAN. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- JavaScript -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="abc4.js"></script>
+
+  
+</body>
+</html>
